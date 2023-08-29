@@ -1,0 +1,289 @@
+.btn:focus,.btn.active,input:focus,input:hover,button:focus.btn:active,button.focus,button:hover,button:active,button.active,.selectpicker:focus,a:focus,
+.btn:active:focus {
+    @include no-outline();box-shadow: none !important;
+}
+// font and colors
+.font-light {font-family:$font-light;}
+.font-reg   {font-family:$font-reg;}
+.font-semi  {font-family:$font-semi;}
+.font-bold  {font-family:$font-bold;}
+.font-med  {font-family:$font-med;}
+
+//colors
+.theme-color{color:$theme-color}
+.green-color{color:$green}
+.white-color{color:$white}
+.black-color{color:$black}
+.grey-color {color:$grey}
+.lightblack-color {color:$light-black}
+
+
+//background color
+a.theme-color{
+    color:$theme-color !important;text-decoration:none;transition:all 0.5s;
+    &:hover{
+        color:darken($theme-color, 10%) !important;
+    }
+}
+a.green-color{
+    color:$green !important;text-decoration:none;transition:all 0.5s;
+    &:hover{
+        color:darken($green , 5%) !important;
+    }
+}
+a.default-color{
+    color:$black ;text-decoration:none;transition:all 0.5s;
+    &:hover{
+        color:$theme-color;
+    }
+}
+
+//margin
+.mt-30{
+    margin-top: 30px;
+    @include media-breakpoint-down(sm){
+        margin-top: 15px
+    }
+}
+//padding
+.p-30{
+    padding: 30px;
+    @media(max-width: 1440px){
+        padding: 20px;
+    }
+    @include media-breakpoint-down(md){
+        padding: 15px;
+    }
+}
+.h-16{
+    font-size: 16px;
+    @include media-breakpoint-down(sm){
+      font-size:14px;
+    }
+}
+.h-18{
+    font-size: 18px;
+    @include media-breakpoint-down(lg){
+       font-size:17px;
+    }
+
+    @include media-breakpoint-down(md){
+         font-size:16px;
+    }
+     @include media-breakpoint-down(sm){
+         font-size:15px;
+    }
+}
+
+.h-20{
+    font-size: 20px;
+
+    @include media-breakpoint-down(lg){
+       font-size:18px;
+    }
+
+    @include media-breakpoint-down(md){
+       font-size:17px;
+    }
+     @include media-breakpoint-down(sm){
+       font-size:15px;
+    }
+}
+.h-24{
+    font-size: 24px;
+
+    @include media-breakpoint-down(lg){
+       font-size:20px;
+    }
+    @include media-breakpoint-down(md){
+        font-size:18px
+    }
+     @include media-breakpoint-down(sm){
+        font-size:17px
+    }
+}
+
+//main content
+.mainContent {
+    padding: 105px 60px 30px 150px;
+    @include transition(all 0.3s);
+    @media(max-width: 1440px){ 
+        padding:90px 15px 20px 105px;
+    }
+    @include media-breakpoint-down(lg){
+        padding:80px 15px 20px 15px;
+    }
+    @include media-breakpoint-down(sm){
+        padding:65px 0px 15px 0px;
+    }
+}
+
+// custom scroll
+.mCustomScrollbar{
+    .mCSB_inside > {
+        .mCSB_container {
+            margin-right: 0px;margin-bottom: 0;
+        }
+    }
+    .mCSB_draggerRail {
+        background: transparent;
+    }
+    .mCSB_dragger_bar {
+        background-color:$border-color !important; border-radius:6px;
+    }
+}
+.mCSB_scrollTools{
+    width: 9px;
+}
+
+
+
+
+// Ripple Effect
+.ripple-effect-dark,
+.ripple-effect {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.ripple-effect span.ripple-overlay,
+.ripple-effect-dark span.ripple-overlay {
+    animation: ripple 0.9s;
+    border-radius: 100%;
+    background: #fff;
+    height: 12px;
+    position: absolute;
+    width: 12px;
+    line-height: 12px;
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.ripple-effect-dark span.ripple-overlay {
+    background: #000;
+    opacity: 0.07;
+}
+//loader for table content
+.listloader{
+    .spinner-border{
+        border-width: 2px;
+    }
+}
+//common upload photo
+.upload{
+    position: relative;
+    display: inline-block;
+    &__img{
+        height: 110px;
+        width: 110px;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        border:2px solid #E6E6E6;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    label{
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        background: $green;
+        color: $white;
+        position: absolute;
+        border-radius: 50%;
+        font-size: 12px;
+        line-height: 31px;
+        right: 0;
+        bottom: 5px;
+        cursor: pointer;
+        @include box-shadow(0,5px,10px,rgba($black,0.3));
+        input{
+            display: none;
+        }
+    }
+}
+//edit btn
+.btn-edit{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border:1px solid $border-color;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    color:$green;
+    &:hover{
+        background:$green;
+        color: $white;
+        border-color: $green;
+    }
+}
+//back btn
+.back-btn{
+    color: #161D1D;
+    i{
+        font-size: 15px;
+        margin-right: 5px;
+        position: relative;
+        top: 2px;
+    }
+    &:hover{
+        color:$green;
+    }
+    @include media-breakpoint-down(sm){
+        i{
+            top: 0;
+        }
+    }
+}
+.box-shadow{
+    @include box-shadow(0,0,20px, rgba($black,0.04));
+}
+//loader for button
+.btn{
+    .spinner-border{
+        border-width: 2px;
+        height: 15px;
+        width: 15px;
+        margin-left: 3px;
+        vertical-align: middle;
+        position: relative;
+        top: -1px;
+    }
+}
+.tooltip{
+    transition: none !important;
+}
+.btn-commission{
+    margin-top: 31px;
+    @include media-breakpoint-down(sm){
+        margin-top: 26px;
+    }
+    @include media-breakpoint-down(xs){
+        margin-top:0px;
+    }
+}
+.error-help-block{
+    color: red; margin-top: 5px; font-size: 14px;
+}
+//Defaulf Scrollbar 
+::-webkit-scrollbar {
+    width:.2em;height:.3em;
+}
+::-webkit-scrollbar-track {
+    @include  box-shadow(0 ,0 ,3px , rgba(0,0,0,0.1));background-color:#E5E5E5;
+}
+::-webkit-scrollbar-thumb {
+  background-color:$theme-color;
+}
+//button align
+.button-margin{
+    margin-top: 31px;
+    @include media-breakpoint-down(sm){
+        margin-top: 0;
+    }
+}

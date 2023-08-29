@@ -1,0 +1,35 @@
+//Settings
+@import 'settings/settings.main';
+
+//Tools
+@import 'tools/tools.mixins';
+
+//Element
+@import 'elements/elements.html';
+
+//Object
+@import 'objects/objects.main';
+
+//Component
+@import 'components/components.main';
+
+//pages
+@import 'pages/auth-pages';
+@import 'pages/dashboard-pages';
+@import 'pages/error-page';
+@import 'pages/detail-page';
+@import 'pages/edit-cms-page';
+@import 'pages/faq-page';
+@import 'pages/reply';
+@import 'pages/notification';
+
+//Utilities
+@import 'utilities/utilities.main'; 
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+/* ==========================================================================
+   #TYPOGRAPHY
+   ========================================================================== */
+
+//font-reg
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../fonts/Poppins-Regular.eot');
+    src: url('../fonts/Poppins-Regular.eot') format('embedded-opentype'),
+         url('../fonts/Poppins-Regular.woff') format('woff'),
+         url('../fonts/Poppins-Regular.ttf') format('truetype'),
+         url('../fonts/Poppins-Regular.svg#Poppins-Regular') format('svg');
+         font-display: swap;
+}
+
+//font-light
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url('../fonts/Poppins-Light.eot');
+    src: url('../fonts/Poppins-Light.eot') format('embedded-opentype'),
+         url('../fonts/Poppins-Light.woff') format('woff'),
+         url('../fonts/Poppins-Light.ttf') format('truetype'),
+         url('../fonts/Poppins-Light.svg#Poppins-Light') format('svg');
+         font-display: swap;
+}
+
+//font-semibold
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('../fonts/Poppins-SemiBold.eot');
+    src: url('../fonts/Poppins-SemiBold.eot') format('embedded-opentype'),
+         url('../fonts/Poppins-SemiBold.woff') format('woff'),
+         url('../fonts/Poppins-SemiBold.ttf') format('truetype'),
+         url('../fonts/Poppins-SemiBold.svg#Poppins-SemiBold') format('svg');
+         font-display: swap;
+}
+
+//font-medium
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../fonts/Poppins-Medium.eot');
+    src: url('../fonts/Poppins-Medium.eot') format('embedded-opentype'),
+         url('../fonts/Poppins-Medium.woff') format('woff'),
+         url('../fonts/Poppins-Medium.ttf') format('truetype'),
+         url('../fonts/Poppins-Medium.svg#Poppins-Medium') format('svg');
+         font-display: swap;
+}
+
+//font-bold
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../fonts/Poppins-Bold.eot');
+    src: url('../fonts/Poppins-Bold.eot') format('embedded-opentype'),
+         url('../fonts/Poppins-Bold.woff') format('woff'),
+         url('../fonts/Poppins-Bold.ttf') format('truetype'),
+         url('../fonts/Poppins-Bold.svg#Poppins-Bold') format('svg');
+         font-display: swap;
+}

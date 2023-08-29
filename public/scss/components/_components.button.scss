@@ -1,0 +1,57 @@
+.btn{
+    padding:9px 25px;cursor:pointer;font-family:$font-med; border-radius: 3px;font-size: 16px;
+    &.btn-sm{
+        padding:9px 15px;
+    }
+    &:disabled,.disabled{
+        cursor: default;
+    }
+    &.btn-primary{
+        border-color: $green;color: $white;background-color:$green;
+        &:hover,&:focus,&:active,&:not(:disabled):not(.disabled):active {
+            border-color:darken($green, 5%);background: darken($green, 5%);color: $white;
+        }
+    }
+    &.btn-secondary{
+        border-color: $theme-color;color: $white;background-color:$theme-color;
+        &:hover,&:focus,&:active,&:not(:disabled):not(.disabled):active {
+            border-color: darken($theme-color, 5%);background: darken($theme-color, 5%);
+        }
+    }
+    &.btn-outline-primary{
+        border-color:$light-black;color: $light-black;background-color:transparent;
+        &:hover,&:focus,&:active,&:not(:disabled):not(.disabled):active {
+            border-color: darken($light-black, 5%);color: $white;background: $light-black;
+        }
+    }
+    &.btn-outline-secondary{
+        border-color:$theme-color;color: $theme-color;background-color:transparent;
+        &:hover,&:focus,&:active,&:not(:disabled):not(.disabled):active {
+            border-color: darken($theme-color, 5%);color: $white;background: $theme-color;
+        }
+    }
+    &.width-120{
+        min-width: 120px;
+    }
+    @include media-breakpoint-down(lg){
+        padding:10px 20px; font-size:15px;
+    }
+    @include media-breakpoint-down(md){
+        padding:9px 15px; font-size:13px;
+        height: 40px; display: inline-flex; align-items: center; justify-content: center;
+        &.width-120{
+            min-width: 100px;
+        }
+         &.btn-sm{
+            padding:9px 15px;
+            height: 40px;
+        }
+    }
+    @include media-breakpoint-down(sm){
+        &.width-120{
+            min-width: 85px;
+        }
+    }
+}
+
+

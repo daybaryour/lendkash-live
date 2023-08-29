@@ -1,0 +1,33 @@
+/* ==========================================================================
+   #ELEMENTS
+========================================================================== */
+html{height: 100%;}
+body{
+    font-family: $font-reg;color:$black; font-size: 15px;background-color:#F2F7F7;min-height: 100%;
+    @include media-breakpoint-down(sm){
+        font-size: 14px;
+    }
+}
+
+// select color
+::-moz-selection {
+  /* Code for Firefox */
+  color: $white;
+  background:$green;
+}
+
+::selection {
+  color: $white;
+  background:$green;
+}
+
+:focus {
+    @include no-outline();box-shadow: none;
+}
+
+a{
+    @include transition (all 0.5s);
+    &:hover{
+        text-decoration: none;
+    }
+}

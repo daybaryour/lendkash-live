@@ -1,0 +1,96 @@
+.faqPage{
+    .common-box{
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    border-radius: 5px;
+    background-color: #fff;
+        .accordion{
+          .card{
+            border:0px;border-bottom:1px solid #F0F0F0; 
+            .card-header{
+                position:relative;background:$white;
+                border:0px;padding:0px;
+                    button{
+                    padding:20px 20px 20px 54px;width:100%;display:block;height:auto; text-decoration: none;
+                    text-align:left;color:$black;font-size:14px;font-family:$font-semi;
+                        &:before{
+                           content: "\e927";font-family:'icomoon' !important; font-size:26px;position:absolute;left:20px;
+                            color:$grey;top:50%;transform:translateY(-50%);
+                        }
+                    &[aria-expanded="true"]{
+                        box-shadow:0 8px 15px rgba($black, 0.1) !important;color:$green;
+                            &:before{
+                                content: "\e928";color:$green;
+                            }
+                    }
+                   }
+
+                .right-cnt{
+                    position:absolute;right:25px;top:50%;transform:translateY(-50%);
+                    li{
+                        &:not(:last-child){
+                            margin-right:25px;
+                        }
+                        a{
+                            color:$grey;font-size:15px;display:inline-block;
+                            &:hover{
+                                color:$green;
+                            }
+                        }
+                    }
+                }
+                &.disabled{
+                    button{
+                        color:$grey;
+                    }
+                }
+            }
+            .card-body{
+                padding:20px 25px;
+                p{
+                    font-size:14px;
+                    &:not(:last-child){
+                        margin-bottom:8px !important;
+                    }
+                }
+            }
+          }
+          @include media-breakpoint-down(sm) {
+            .card{
+                .card-header{
+                        button{
+                            padding:15px 15px 15px 37px;height:auto; font-size:12px;
+                            &:before{
+                               font-size:22px;left:10px;
+                            }
+                        &[aria-expanded="true"]{
+                            box-shadow:0 8px 15px rgba($black, 0.1) !important;color:$green;
+                                &:before{
+                                    content: "\e928";color:$green;
+                                }
+                        }
+                       }
+
+                    .right-cnt{
+                       right:15px;
+                        li{
+
+                            a{
+                                font-size:13px;
+                            }
+                        }
+                    }
+                }
+                .card-body{
+                    padding:15px;
+                    p{
+                        font-size:13px;
+                    }
+                }
+            }
+          }
+        }
+    }
+    &--mobileView{
+        padding-top: 20px;
+    }
+}

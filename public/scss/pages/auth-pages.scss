@@ -1,0 +1,67 @@
+.auth{
+    .mainContent{padding-top: 80px}
+    .c-header{
+        .navbar{
+            &__nav{
+                display: none;
+            }
+            &__toggle-icon{
+                display: none;
+            }
+        }
+        .mobile-left{
+            display: none;
+        }
+    }
+    &__section{
+        @include media-breakpoint-up(sm){
+            min-height: calc(100vh - 80px);
+        }
+        .auth-area{
+            max-width: 450px;
+            &__head{
+                margin-bottom: 25px;
+                h1{font-size: 30px;color:$black;margin: 0;}
+            }
+            &__form{
+                background-color: $white;padding: 40px 35px;
+            }
+        }
+    }
+    @media(max-width: 1440px){
+        background-size: 200px;
+        &__section{
+            .auth-area{
+               &__head{
+                h1{font-size: 30px;}
+               }
+           }
+        }
+    }
+    @include media-breakpoint-down(lg){
+        background-size: 150px;
+    }
+    @include media-breakpoint-down(md){
+        &__section{
+            .auth-area{
+               &__head{
+                h1{font-size: 25px;}
+               }
+           }
+        }
+    }
+    @include media-breakpoint-down(sm){
+        background-size: 100px;
+        &__section{
+            .auth-area{
+                &__head{
+                    margin-bottom: 20px;
+                    h1{font-size: 20px;}
+                }
+                &__form{
+                    padding: 15px 15px;
+                }
+           }
+        }
+    }
+}

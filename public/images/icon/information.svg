@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.5" height="20.5" viewBox="0 0 20.5 20.5">
+  <g id="information" transform="translate(0.25 0.25)">
+    <path id="Path_32700" data-name="Path 32700" d="M10,0A10,10,0,1,0,20,10,10.011,10.011,0,0,0,10,0Zm0,18.182A8.182,8.182,0,1,1,18.182,10,8.191,8.191,0,0,1,10,18.182Z" fill="#153759" stroke="#fff" stroke-width="0.5"/>
+    <path id="Path_32701" data-name="Path 32701" d="M146.214,70a1.212,1.212,0,1,0,1.212,1.213A1.214,1.214,0,0,0,146.214,70Z" transform="translate(-136.214 -65.758)" fill="#153759" stroke="#fff" stroke-width="0.5"/>
+    <path id="Path_32702" data-name="Path 32702" d="M150.909,140a.909.909,0,0,0-.909.909v5.455a.909.909,0,1,0,1.818,0v-5.455A.909.909,0,0,0,150.909,140Z" transform="translate(-140.909 -131.515)" fill="#153759" stroke="#fff" stroke-width="0.5"/>
+  </g>
+</svg>
